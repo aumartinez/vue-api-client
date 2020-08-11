@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <!-- Required meta tags -->
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     
+    <title>Vue API Client</title>
+      <meta name="description" content="Vue SPA Api Client" />
+      <meta name="author" content="Augusto Martinez" />
+          
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/all.css" />
+      <link rel="stylesheet" href="css/global.css" />
+   </head>
+  <body id="home">
+    <div id="app">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>
+                {{title}}
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">              
+              <div class="row">
+                <div class="col-6">
+                  <form id="search-form" action="/" method="get">
+                    <div class="form-group">
+                      <label for="search">Search</label>
+                      <input id="search" class="form-control" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+              <h2>
+                {{subtitle}}
+              </h2>
+              
+              <ul>
+                <li 
+                v-for="item in continentList"
+                v-bind:key="item.id">
+                  {{item.text}}
+                  <ul>
+                    <li
+                    v-for="item in countriesList">
+                      {{item.text}}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/vue.js"></script>  
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+/* App Forms CSS */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Helpers */
+
+.col-center {
+  float: none;
+  margin: 0 auto;
+}
