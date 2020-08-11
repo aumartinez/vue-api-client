@@ -8,11 +8,6 @@ Vue.component("continent-item",{
   template: "<li>{{continent.text}}</li>",
 });
 
-Vue.component("continent-item",{
-  props: ["continent"],
-  template: "<li>{{continent.text}}</li>",
-});
-
 var vm = new Vue({
   el: "#app",
   data: {
