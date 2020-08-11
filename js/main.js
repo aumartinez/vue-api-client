@@ -1,7 +1,7 @@
 //JS Script
 
 var API_KEY = "Z3Vlc3Q6bXlwYXNz";
-var url = "https://localhost:4343/php-api-demo/api.php";
+var url = "http://accedo-gps.000webhostapp.com/demo/php-api-demo/api.php";
 
 Vue.component("continent-item",{
   props: ["continent"],
@@ -62,7 +62,5 @@ async function mounted() {
   catch(e) {
     console.log(e);
   }  
-  
-  
   
 }
